@@ -23,15 +23,40 @@ namespace WebForms_Componentes
 
         protected void btExecutar_Click(object sender, EventArgs e)
         {
-            lbDados.Items.Clear();
+            //lbDados.Items.Clear();
             ListItem li = ddlNumeros.SelectedItem;
             int n = Convert.ToInt32(li.Value);
             int resultado = 0;
+            //for (int i = 0; i < 11; i++)
+            //{
+            //    resultado = i * n;
+            //    lbDados.Items.Add(i.ToString() + "x" + n.ToString() + " = " + resultado.ToString());
+
+            //    tbDados.Rows[i].Cells[0].Text = n.ToString();
+            //    tbDados.Rows[i].Cells[4].Text = resultado.ToString();
+            //}
+
+
+            //Usando placeholder
+            
+            Table tabela = new Table();
             for (int i = 0; i <= 10; i++)
             {
+                TableRow linha = new TableRow();
+                //1° celula
+                TableCell coluna = new TableCell();
+                coluna.Text = n.ToString() + " X " + i.ToString() + " = ";
+                linha.Cells.Add(coluna);
+
+                //2° celula
+                coluna = new TableCell();
                 resultado = i * n;
-                lbDados.Items.Add(i.ToString() + "x" + n.ToString() + " = " + resultado.ToString());
+                coluna.Text = resultado.ToString();
+                linha.Cells.Add(coluna);
+
+                tabela.Rows.Add(linha);
             }
+            PlaceHolder.Controls.Add(tabela);
         }
     }
 }

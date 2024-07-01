@@ -49,5 +49,23 @@ namespace WebForms_Componentes
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ListBox lbDados;
+
+        /// <summary>
+        /// tbDados control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Table tbDados;
+
+        /// <summary>
+        /// PlaceHolder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder PlaceHolder;
     }
 }

@@ -18,23 +18,40 @@ namespace WebForms_Componentes
         {
             //ddlSite.Items.Add(txtSite.Text);
 
-            ListItem item = new ListItem(txtSite.Text, ddlSite.Items.Count.ToString());
-            ddlSite.Items.Add(item);
-            txtSite.Text = string.Empty;
+            ListItem item = new ListItem(txtSite.Text, txtEndereco.Text);
 
-            item = new ListItem(txtEndereco.Text, lbEndereco.Items.Count.ToString());
             lbEndereco.Items.Add(item);
             txtEndereco.Text = string.Empty;
+            txtSite.Text = string.Empty;
 
         }
 
         protected void btSelecionar_Click(object sender, EventArgs e)
         {
+            ddlSite.Items.Clear();
+         
+            //Pegar multiplos valores de uma list box e jogar em uma drop down list [Usando Foreach]
+            foreach (ListItem item in lbEndereco.Items)
+            {
+                if (item.Selected)
+                {
+                    item.Selected = false;
+                    ddlSite.Items.Add(item);
+                }
+            }
 
-            ListItem item = ddlSite.SelectedItem;
-            txtSite.Text = item.Text;
-            item = lbEndereco.SelectedItem;
-            txtEndereco.Text = item.Text;
+
+            //Pegar multiplos valores de uma list box e jogar em uma drop down list [Usando laço For]
+            //ListItem li;
+            //for (int i = 0; i < lbEndereco.Items.Count; i++)
+            //{
+            //    li = lbEndereco.Items[i];
+            //    if (li.Selected)
+            //    {
+            //        li.Selected = false;
+            //        ddlSite.Items.Add(li);
+            //    }
+            //}
 
         }
     }

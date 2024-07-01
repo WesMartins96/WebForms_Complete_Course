@@ -42,6 +42,15 @@ namespace WebForms_Componentes
         protected global::System.Web.UI.WebControls.TextBox txtEndereco;
 
         /// <summary>
+        /// lbEndereco control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListBox lbEndereco;
+
+        /// <summary>
         /// btnInserir control.
         /// </summary>
         /// <remarks>
@@ -67,14 +76,5 @@ namespace WebForms_Componentes
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlSite;
-
-        /// <summary>
-        /// lbEndereco control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox lbEndereco;
     }
 }
