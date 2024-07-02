@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="Calendar.aspx" />
     <Content Include="ComponentesI.aspx" />
+    <Content Include="Panel_BulletList.aspx" />
     <Content Include="Tabuada.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -86,6 +87,13 @@
     </Compile>
     <Compile Include="ComponentesI.aspx.designer.cs">
       <DependentUpon>ComponentesI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel_BulletList.aspx.cs">
+      <DependentUpon>Panel_BulletList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel_BulletList.aspx.designer.cs">
+      <DependentUpon>Panel_BulletList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tabuada.aspx.cs">
