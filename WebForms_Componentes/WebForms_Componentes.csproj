@@ -69,6 +69,9 @@
   <ItemGroup>
     <Content Include="Calendar.aspx" />
     <Content Include="ComponentesI.aspx" />
+    <Content Include="ComponentesII.aspx" />
+    <Content Include="Imagens\image01.jpg" />
+    <Content Include="Imagens\image02.jpg" />
     <Content Include="Panel_BulletList.aspx" />
     <Content Include="Tabuada.aspx" />
     <Content Include="Web.config" />
@@ -87,6 +90,13 @@
     </Compile>
     <Compile Include="ComponentesI.aspx.designer.cs">
       <DependentUpon>ComponentesI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ComponentesII.aspx.cs">
+      <DependentUpon>ComponentesII.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ComponentesII.aspx.designer.cs">
+      <DependentUpon>ComponentesII.aspx</DependentUpon>
     </Compile>
     <Compile Include="Panel_BulletList.aspx.cs">
       <DependentUpon>Panel_BulletList.aspx</DependentUpon>
@@ -113,6 +123,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
