@@ -77,6 +77,7 @@
     <Content Include="Imagens\image03.jpg" />
     <Content Include="Panel_BulletList.aspx" />
     <Content Include="Tabuada.aspx" />
+    <Content Include="UtilizandoJavascript.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -122,6 +123,13 @@
     </Compile>
     <Compile Include="Tabuada.aspx.designer.cs">
       <DependentUpon>Tabuada.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UtilizandoJavascript.aspx.cs">
+      <DependentUpon>UtilizandoJavascript.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UtilizandoJavascript.aspx.designer.cs">
+      <DependentUpon>UtilizandoJavascript.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
