@@ -14,5 +14,20 @@ namespace WebForms_Componentes
 
         }
 
+        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+        {
+            MultiView1.ActiveViewIndex = 1;
+        }
+
+        protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
+        {
+            MultiView1.ActiveViewIndex = 2;
+        }
+
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            MultiView1.ActiveViewIndex = 0;
+
+        }
     }
 }

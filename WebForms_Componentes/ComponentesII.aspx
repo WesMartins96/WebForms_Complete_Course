@@ -11,12 +11,29 @@
         <div>
             <asp:MultiView ID="MultiView1" runat="server" ActiveViewIndex="0" >
                 <asp:View ID="View1" runat="server">
-                    <asp:Image ID="Image1" runat="server" Height="300px" ImageUrl="~/Imagens/image01.jpg" Width="500px" AlternateText="Imagem flor do windows 11" />
-                    <asp:Image ID="Image2" runat="server" Height="300px" ImageUrl="~/Imagens/image02.jpg" Width="500px" AlternateText="Imagem ondas do windows 11" />
+                    <asp:ImageButton ID="ImageButton1" runat="server" Height="300px" ImageUrl="~/Imagens/image01.jpg" OnClick="ImageButton1_Click" Width="500px" />
+                    <asp:ImageButton ID="ImageButton2" runat="server" Height="300px" ImageUrl="~/Imagens/image02.jpg" OnClick="ImageButton2_Click" Width="500px" />
                 </asp:View>
                 <asp:View ID="View2" runat="server">
+                    <asp:Label ID="Label1" runat="server" Text="Windows 11 - Blue Flower"></asp:Label>
+                    <br />
+                    <asp:Label ID="Label2" runat="server" Text="Windows 11 - Blue Waves"></asp:Label>
+                    <br />
+                    <br />
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="https://www.youtube.com/channel/UCis3hJLsYyLF3Zq0q24GKUw" Target="_blank">Meu Canal no Youtube</asp:HyperLink>
+                    <br />
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="https://github.com/WesMartins96" Target="_blank">Meu GitHub</asp:HyperLink>
+                    <br />
+                    <br />
+                    <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Voltar</asp:LinkButton>
                 </asp:View>
                 <asp:View ID="View3" runat="server">
+                    <asp:Label ID="Label3" runat="server" Font-Bold="True" Text="Windows 7 - True Flower"></asp:Label>
+                    <br />
+                    <asp:Label ID="Label4" runat="server" Font-Bold="True" Text="Windows 7 - Waves of Pass"></asp:Label>
+                    <br />
+                    <br />
+                    <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton1_Click">Voltar</asp:LinkButton>
                 </asp:View>
             </asp:MultiView>
         </div>
