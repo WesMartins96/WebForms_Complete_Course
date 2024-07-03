@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>~/Imagens/image01.jpg</ImageUrl>
+    <height>90</height>
+    <width>90</width>
+    <NavigateUrl>http://www.microsoft.com</NavigateUrl>
+    <AlternateText>Microsoft Main Site</AlternateText>
+    <Impressions>80</Impressions>
+    <Keyword>Topic1</Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/Imagens/image02.jpg</ImageUrl>
+    <height>90</height>
+    <width>90</width>
+    <NavigateUrl>http://www.wingtiptoys.com</NavigateUrl>
+    <AlternateText>Wingtip Toys</AlternateText>
+    <Impressions>80</Impressions>
+    <Keyword>Topic2</Keyword>
+  </Ad>
+</Advertisements>
