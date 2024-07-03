@@ -71,8 +71,10 @@
     <Content Include="Calendar.aspx" />
     <Content Include="ComponentesI.aspx" />
     <Content Include="ComponentesII.aspx" />
+    <Content Include="ImageMap.aspx" />
     <Content Include="Imagens\image01.jpg" />
     <Content Include="Imagens\image02.jpg" />
+    <Content Include="Imagens\image03.jpg" />
     <Content Include="Panel_BulletList.aspx" />
     <Content Include="Tabuada.aspx" />
     <Content Include="Web.config" />
@@ -98,6 +100,13 @@
     </Compile>
     <Compile Include="ComponentesII.aspx.designer.cs">
       <DependentUpon>ComponentesII.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImageMap.aspx.cs">
+      <DependentUpon>ImageMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImageMap.aspx.designer.cs">
+      <DependentUpon>ImageMap.aspx</DependentUpon>
     </Compile>
     <Compile Include="Panel_BulletList.aspx.cs">
       <DependentUpon>Panel_BulletList.aspx</DependentUpon>

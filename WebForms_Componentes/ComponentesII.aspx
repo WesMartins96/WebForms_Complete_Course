@@ -11,6 +11,10 @@
         <div>
             <asp:AdRotator ID="AdRotator1" runat="server" AdvertisementFile="~/ArquivosGerais/Propaganda.xml" Height="300px" Target="_blank" Width="500px" />
             <br />
+            <asp:Literal runat="server" Text="&lt;b&gt;Olá Mundo" ></asp:Literal>
+        </div>
+        <div>
+            
             <asp:MultiView ID="MultiView1" runat="server" ActiveViewIndex="0" >
                 <asp:View ID="View1" runat="server">
                     <asp:ImageButton ID="ImageButton1" runat="server" Height="300px" ImageUrl="~/Imagens/image01.jpg" OnClick="ImageButton1_Click" Width="500px" />
