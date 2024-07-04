@@ -11,7 +11,7 @@ namespace WebForms_Componentes
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Button1.Attributes.Add("onClick", "exibirMensagem()");
+            //Button1.Attributes.Add("onClick", "exibirMensagem()");
         }
     }
 }
