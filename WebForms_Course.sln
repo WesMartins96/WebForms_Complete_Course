@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebForms_Course", "WebForms
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebForms_Componentes", "WebForms_Componentes\WebForms_Componentes.csproj", "{5AB35D4F-8FF8-477C-97ED-8BCA25462CA1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UploadArquivos", "UploadArquivos\UploadArquivos.csproj", "{B74D417A-1A88-4C1C-9D1D-ECBB2B28BF74}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5AB35D4F-8FF8-477C-97ED-8BCA25462CA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AB35D4F-8FF8-477C-97ED-8BCA25462CA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AB35D4F-8FF8-477C-97ED-8BCA25462CA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B74D417A-1A88-4C1C-9D1D-ECBB2B28BF74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B74D417A-1A88-4C1C-9D1D-ECBB2B28BF74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B74D417A-1A88-4C1C-9D1D-ECBB2B28BF74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B74D417A-1A88-4C1C-9D1D-ECBB2B28BF74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
