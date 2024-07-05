@@ -20,6 +20,7 @@
                         <asp:Label ID="Label1" runat="server" Text="Nome"></asp:Label>
                         <br />
                         <asp:TextBox ID="txtbNome" runat="server" Width="200px"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtbNome" ErrorMessage="Obrigatório preencher o campo Nome" Font-Bold="True" Font-Size="X-Small" Font-Underline="False" ForeColor="Red"></asp:RequiredFieldValidator>
                         <br />
                         <br />
                         <asp:Label ID="Label2" runat="server" Text="CPF"></asp:Label>
