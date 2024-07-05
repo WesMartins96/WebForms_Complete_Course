@@ -80,6 +80,7 @@
     <Content Include="Tabuada.aspx" />
     <Content Include="UtilizandoJavascript.aspx" />
     <Content Include="Web.config" />
+    <Content Include="Wizard.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Calendar.aspx.cs">
@@ -138,6 +139,13 @@
     </Compile>
     <Compile Include="UtilizandoJavascript.aspx.designer.cs">
       <DependentUpon>UtilizandoJavascript.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard.aspx.cs">
+      <DependentUpon>Wizard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wizard.aspx.designer.cs">
+      <DependentUpon>Wizard.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
