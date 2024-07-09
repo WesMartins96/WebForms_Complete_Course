@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UploadArquivos", "UploadArq
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataList", "DataList\DataList.csproj", "{BC264318-D1B5-4D12-AF54-1594198A4014}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridView", "GridView\GridView.csproj", "{AB9E49C2-7290-4017-8D0E-FF90D32F6B8C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{BC264318-D1B5-4D12-AF54-1594198A4014}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC264318-D1B5-4D12-AF54-1594198A4014}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC264318-D1B5-4D12-AF54-1594198A4014}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB9E49C2-7290-4017-8D0E-FF90D32F6B8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB9E49C2-7290-4017-8D0E-FF90D32F6B8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB9E49C2-7290-4017-8D0E-FF90D32F6B8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB9E49C2-7290-4017-8D0E-FF90D32F6B8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
