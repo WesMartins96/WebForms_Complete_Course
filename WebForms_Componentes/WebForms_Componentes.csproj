@@ -71,6 +71,7 @@
     <Content Include="Calendar.aspx" />
     <Content Include="ComponentesI.aspx" />
     <Content Include="ComponentesII.aspx" />
+    <Content Include="ExemploMasterPage.aspx" />
     <Content Include="ImageMap.aspx" />
     <Content Include="Imagens\image01.jpg" />
     <Content Include="Imagens\image02.jpg" />
@@ -105,6 +106,13 @@
     <Compile Include="ComponentesII.aspx.designer.cs">
       <DependentUpon>ComponentesII.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ExemploMasterPage.aspx.cs">
+      <DependentUpon>ExemploMasterPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExemploMasterPage.aspx.designer.cs">
+      <DependentUpon>ExemploMasterPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ImageMap.aspx.cs">
       <DependentUpon>ImageMap.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -118,6 +126,13 @@
     </Compile>
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
     <Compile Include="Menu.aspx.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
@@ -157,6 +172,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MasterPage.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
