@@ -29,7 +29,11 @@
                 <RowStyle BackColor="White" ForeColor="#003399" />
                 <SelectedRowStyle BackColor="#009999" Font-Bold="True" ForeColor="#CCFF99" />
             </asp:GridView>
-            <asp:SqlDataSource ID="DataSourceGridView" runat="server" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\wesley_lopes\Desktop\Codigos_Cursos\WebForms_Course\WebForms_Course\DataList\App_Data\Agenda.mdf;Integrated Security=True" ProviderName="System.Data.SqlClient" SelectCommand="SELECT [Id], [Nome], [Email] FROM [Contato]" DeleteCommand="DELETE FROM [Contato] WHERE [Id] = @Id" InsertCommand="INSERT INTO [Contato] ([Nome], [Email]) VALUES (@Nome, @Email)" UpdateCommand="UPDATE [Contato] SET [Nome] = @Nome, [Email] = @Email WHERE [Id] = @Id">
+            <asp:SqlDataSource ID="DataSourceGridView" runat="server" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\wesley_lopes\Desktop\Codigos_Cursos\WebForms_Course\WebForms_Course\DataList\App_Data\Agenda.mdf;Integrated Security=True" ProviderName="System.Data.SqlClient" 
+                SelectCommand="SELECT [Id], [Nome], [Email] FROM [Contato]" 
+                DeleteCommand="DELETE FROM [Contato] WHERE [Id] = @Id" 
+                InsertCommand="INSERT INTO [Contato] ([Nome], [Email]) VALUES (@Nome, @Email)" 
+                UpdateCommand="UPDATE [Contato] SET [Nome] = @Nome, [Email] = @Email WHERE [Id] = @Id">
                 <DeleteParameters>
                     <asp:Parameter Name="Id" Type="Int32" />
                 </DeleteParameters>
