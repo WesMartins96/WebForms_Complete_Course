@@ -16,7 +16,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="Id" DataSourceID="DataSourceGridView" EnableModelValidation="True" Width="100%" AllowPaging="True" AllowSorting="True" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CssClass="centered">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="Id" DataSourceID="DataSourceGridView" EnableModelValidation="True" Width="100%" AllowPaging="True" AllowSorting="True" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CssClass="centered" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
                 <Columns>
                     <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowSelectButton="True" />
                     <asp:BoundField DataField="Id" HeaderText="Id" InsertVisible="False" ReadOnly="True" SortExpression="Id" />
@@ -47,6 +47,20 @@
                     <asp:Parameter Name="Id" Type="Int32" />
                 </UpdateParameters>
             </asp:SqlDataSource>
+            <br />
+            <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataKeyNames="Id" DataSourceID="DataSourceGridView" EnableModelValidation="True" Height="50px" Visible="False" Width="350px">
+                <EditRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="#663399" />
+                <Fields>
+                    <asp:BoundField DataField="Id" HeaderText="Id" InsertVisible="False" ReadOnly="True" SortExpression="Id" />
+                    <asp:BoundField DataField="Nome" HeaderText="Nome" SortExpression="Nome" />
+                    <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
+                    <asp:CommandField ShowInsertButton="True" />
+                </Fields>
+                <FooterStyle BackColor="#FFFFCC" ForeColor="#330099" />
+                <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="#FFFFCC" />
+                <PagerStyle BackColor="#FFFFCC" ForeColor="#330099" HorizontalAlign="Center" />
+                <RowStyle BackColor="White" ForeColor="#330099" />
+            </asp:DetailsView>
         </div>
     </form>
 </body>
