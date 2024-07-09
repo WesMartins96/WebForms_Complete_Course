@@ -76,6 +76,7 @@
     <Content Include="Imagens\image02.jpg" />
     <Content Include="Imagens\image03.jpg" />
     <Content Include="Index.aspx" />
+    <Content Include="Menu.aspx" />
     <Content Include="Panel_BulletList.aspx" />
     <Content Include="Tabuada.aspx" />
     <Content Include="UtilizandoJavascript.aspx" />
@@ -117,6 +118,13 @@
     </Compile>
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Menu.aspx.designer.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
     </Compile>
     <Compile Include="Panel_BulletList.aspx.cs">
       <DependentUpon>Panel_BulletList.aspx</DependentUpon>
