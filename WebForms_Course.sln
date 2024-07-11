@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataList", "DataList\DataLi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridView", "GridView\GridView.csproj", "{AB9E49C2-7290-4017-8D0E-FF90D32F6B8C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sistema_Agenda", "Sistema_Agenda\Sistema_Agenda.csproj", "{CFE8DBAD-6A4A-4CF3-B62B-7FB91E00A3CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{AB9E49C2-7290-4017-8D0E-FF90D32F6B8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB9E49C2-7290-4017-8D0E-FF90D32F6B8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB9E49C2-7290-4017-8D0E-FF90D32F6B8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFE8DBAD-6A4A-4CF3-B62B-7FB91E00A3CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFE8DBAD-6A4A-4CF3-B62B-7FB91E00A3CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFE8DBAD-6A4A-4CF3-B62B-7FB91E00A3CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFE8DBAD-6A4A-4CF3-B62B-7FB91E00A3CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
