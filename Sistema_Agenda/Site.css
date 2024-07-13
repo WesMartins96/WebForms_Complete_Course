@@ -1,36 +1,107 @@
 ﻿body {
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
 }
-
 
 header {
-    margin: 0 auto;
-    width: 80%;
-    height: 70px;
-    background-color: #B5C7DE;
-    padding: 10px;
+    background-color: #284E98;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
-header h1 {
-    color: white;
-    float: left;
-}
+    header h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 24px;
+    }
 
 nav {
-    float: right;
+    margin-top: 10px;
+    text-align: center;
 }
 
 main {
-    margin: 0 auto;
+    margin: 20px auto;
     width: 80%;
-    background-color: lightgray;
-    padding: 10px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 footer {
-    margin: 0 auto;
-    width: 80%;
-    height: 40px;
-    background-color: #B5C7DE;
-    padding: 10px;
+    background-color: #284E98;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
+    footer p {
+        margin: 0;
+    }
+
+a {
+    color: #284E98;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+.main-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+    .main-menu ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .main-menu li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+.dynamic-hover {
+    background-color: #284E98 !important;
+    color: white !important;
+}
+
+.dynamic-item {
+    padding: 5px 10px !important;
+}
+
+.dynamic-menu {
+    background-color: #B5C7DE !important;
+}
+
+.dynamic-selected {
+    background-color: #507CD1 !important;
+}
+
+.static-hover {
+    background-color: #284E98 !important;
+    color: white !important;
+}
+
+.static-item {
+    padding: 5px 10px !important;
+}
+
+.static-selected {
+    background-color: #507CD1 !important;
+}
