@@ -75,6 +75,8 @@
     <Content Include="Imagens\agenda.png" />
     <Content Include="Index.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="Login.css" />
+    <Content Include="Site.css" />
     <Content Include="Usuarios.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
