@@ -42,6 +42,10 @@ namespace Sistema_Agenda
 			SqlDataReader registro = cmd.ExecuteReader();
             if (registro.HasRows)
             {
+				//cookie para proteger as rotas
+				HttpCookie login = new HttpCookie("Login", txtbEmailLogin.Text);
+				Response.Cookies.Add(login);
+
 				//Direcionar para a pagina principal
 				Response.Redirect("~/Index.aspx");
             }

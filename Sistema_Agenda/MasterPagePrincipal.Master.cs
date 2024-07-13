@@ -11,7 +11,11 @@ namespace Sistema_Agenda
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //só navega no site se o usuário fizer login
+            if (Request.Cookies["Login"] == null)
+            {
+                Response.Redirect("~/Login.aspx");
+            }
         }
     }
 }
