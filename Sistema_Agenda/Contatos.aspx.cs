@@ -19,29 +19,43 @@ namespace Sistema_Agenda
 
         protected void btnInserirNovoContato_Click(object sender, EventArgs e)
         {
-			//captura a string de conexão
-			var rootWebConfig = WebConfigurationManager.OpenWebConfiguration("/MyWebSiteRoot");
-			ConnectionStringSettings connectionString;
-			connectionString = rootWebConfig.ConnectionStrings.ConnectionStrings["ConnectionString"];
-			//cria um objeto de conexão ao banco de dados
-			SqlConnection con = new SqlConnection();
-			con.ConnectionString = connectionString.ToString();
-			SqlCommand cmd = new SqlCommand();
-			cmd.Connection = con;
-			//comando que será utilizado
-			cmd.CommandText = "INSERT INTO Contato (Nome, Email, Telefone) VALUES (@Nome, @Email, @Telefone)";
-			//definir os parametros utilizados na query
-			cmd.Parameters.AddWithValue("Nome", txtbNome.Text);
-			cmd.Parameters.AddWithValue("Email", txtbEmail.Text);
-			cmd.Parameters.AddWithValue("Telefone", txtbTelefone.Text);
-			//abrir conexão
-			con.Open();
-			//executa o comando
-			cmd.ExecuteNonQuery();
-			//fecha a conexão
-			con.Close();
-			//Recarrega a GridView
-			GridView1.DataBind();
+            try
+            {
+                if (txtbEmail.Text != "" && txtbNome.Text != "" && txtbTelefone.Text != "")
+                {
+					//captura a string de conexão
+					var rootWebConfig = WebConfigurationManager.OpenWebConfiguration("/MyWebSiteRoot");
+					ConnectionStringSettings connectionString;
+					connectionString = rootWebConfig.ConnectionStrings.ConnectionStrings["ConnectionString"];
+					//cria um objeto de conexão ao banco de dados
+					SqlConnection con = new SqlConnection();
+					con.ConnectionString = connectionString.ToString();
+					SqlCommand cmd = new SqlCommand();
+					cmd.Connection = con;
+					//comando que será utilizado
+					cmd.CommandText = "INSERT INTO Contato (Nome, Email, Telefone) VALUES (@Nome, @Email, @Telefone)";
+					//definir os parametros utilizados na query
+					cmd.Parameters.AddWithValue("Nome", txtbNome.Text);
+					cmd.Parameters.AddWithValue("Email", txtbEmail.Text);
+					cmd.Parameters.AddWithValue("Telefone", txtbTelefone.Text);
+					//abrir conexão
+					con.Open();
+					//executa o comando
+					cmd.ExecuteNonQuery();
+					//fecha a conexão
+					con.Close();
+					//Recarrega a GridView
+					GridView1.DataBind();
+                }
+                else
+                {
+					throw new Exception("Campos em branco!");
+                }
+            }
+            catch (Exception erro)
+            {
+				Response.Write("<script> alert('"+erro.Message+"'); </script>");
+            }
 		}
     }
 }
