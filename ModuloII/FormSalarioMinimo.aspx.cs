@@ -13,5 +13,14 @@ namespace ModuloII
         {
 
         }
+
+        protected void RadioButtonList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txtbDesconto.Visible = false;
+            if (rbDesconto.SelectedIndex == 3)
+            {
+                txtbDesconto.Visible = true;
+            }
+        }
     }
 }

@@ -51,6 +51,15 @@ namespace ModuloII
         protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
+        /// rbDesconto control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList rbDesconto;
+
+        /// <summary>
         /// txtbDesconto control.
         /// </summary>
         /// <remarks>

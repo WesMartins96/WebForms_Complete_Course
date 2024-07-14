@@ -11,6 +11,9 @@
     <form id="form1" runat="server">
         <div>
             <asp:PlaceHolder ID="PlaceHolder1" runat="server"></asp:PlaceHolder>
+            <br />
+            <br />
+            <asp:Button ID="btnVoltar" runat="server" PostBackUrl="~/FormSalarioMinimo.aspx" Text="Voltar" />
         </div>
     </form>
 </body>

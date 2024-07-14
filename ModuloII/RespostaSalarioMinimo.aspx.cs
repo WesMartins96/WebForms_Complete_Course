@@ -19,8 +19,29 @@ namespace ModuloII
             else
             {
                 double salarioBruto = Convert.ToDouble(Request.Form["txtbSalario"]);
-                double porcentagem = Convert.ToDouble(Request.Form["txtbDesconto"]);
-
+                //previous page para pegar dados
+                double porcentagem = 0;
+                RadioButtonList rb = (RadioButtonList)Page.PreviousPage.FindControl("rbDesconto");
+                if (rb.SelectedIndex != 3)
+                {
+                    switch (rb.SelectedIndex)
+                    {
+                        case 0:
+                            porcentagem = 10;
+                            break;
+                        case 1:
+                            porcentagem = 20;
+                            break;
+                        case 2:
+                            porcentagem = 30;
+                            break;
+                    }
+                }
+                else
+                {
+                    porcentagem = Convert.ToDouble(Request.Form["txtbDesconto"]);
+                }
+                
                 double desconto = (salarioBruto * porcentagem) / 100;
                 double salario = salarioBruto - desconto;
 

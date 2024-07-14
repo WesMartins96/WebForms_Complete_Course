@@ -15,8 +15,13 @@
             <br />
             <br />
             <asp:Label ID="Label2" runat="server" Text="Percentual de Desconto"></asp:Label>
-            <br />
-            <asp:TextBox ID="txtbDesconto" runat="server"></asp:TextBox>
+            <asp:RadioButtonList ID="rbDesconto" runat="server" AutoPostBack="True" OnSelectedIndexChanged="RadioButtonList1_SelectedIndexChanged">
+                <asp:ListItem Selected="True" Value="10">10%</asp:ListItem>
+                <asp:ListItem Value="20">20%</asp:ListItem>
+                <asp:ListItem Value="30">30%</asp:ListItem>
+                <asp:ListItem>Outro</asp:ListItem>
+            </asp:RadioButtonList>
+            <asp:TextBox ID="txtbDesconto" runat="server" Visible="False"></asp:TextBox>
             <br />
             <br />
             <asp:Button ID="btnEnviarDados" runat="server" PostBackUrl="~/RespostaSalarioMinimo.aspx" Text="Enviar Dados" />
