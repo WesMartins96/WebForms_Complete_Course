@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridView", "GridView\GridVi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sistema_Agenda", "Sistema_Agenda\Sistema_Agenda.csproj", "{CFE8DBAD-6A4A-4CF3-B62B-7FB91E00A3CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuloII", "ModuloII\ModuloII.csproj", "{ABCD8593-1207-46B3-8851-75E15FD77F1A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{CFE8DBAD-6A4A-4CF3-B62B-7FB91E00A3CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFE8DBAD-6A4A-4CF3-B62B-7FB91E00A3CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFE8DBAD-6A4A-4CF3-B62B-7FB91E00A3CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABCD8593-1207-46B3-8851-75E15FD77F1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABCD8593-1207-46B3-8851-75E15FD77F1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABCD8593-1207-46B3-8851-75E15FD77F1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABCD8593-1207-46B3-8851-75E15FD77F1A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
