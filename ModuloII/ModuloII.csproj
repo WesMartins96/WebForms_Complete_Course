@@ -67,6 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Cookies.aspx" />
+    <Content Include="Cookies2.aspx" />
     <Content Include="FilmesVirtualPath.aspx" />
     <Content Include="FormSalarioMinimo.aspx" />
     <Content Include="RespostaFilmesVirtualPath.aspx" />
@@ -74,6 +76,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cookies.aspx.cs">
+      <DependentUpon>Cookies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cookies.aspx.designer.cs">
+      <DependentUpon>Cookies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cookies2.aspx.cs">
+      <DependentUpon>Cookies2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cookies2.aspx.designer.cs">
+      <DependentUpon>Cookies2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FilmesVirtualPath.aspx.cs">
       <DependentUpon>FilmesVirtualPath.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
