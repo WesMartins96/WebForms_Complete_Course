@@ -40,6 +40,9 @@ namespace ModuloII
                     Response.Cookies.Add(login);
                     Response.Cookies.Add(new HttpCookie("senha", txtbSenhaCookie.Text));
 
+                    //Session
+                    Session["login"] = txtbLoginCookie.Text;
+
                     Response.Redirect("~/Cookies2.aspx");
                 }
             }

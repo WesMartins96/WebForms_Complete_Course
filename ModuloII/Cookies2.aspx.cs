@@ -11,11 +11,30 @@ namespace ModuloII
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //acessar os cookies do cliente
-            lLogin.Text = "";
-            if (Request.Cookies["login"] != null)
+            if (IsPostBack == true)
             {
-                lLogin.Text = Request.Cookies["login"].Value;
+                //acessar os cookies do cliente
+                lLogin.Text = "";
+                if (Request.Cookies["login"] != null)
+                {
+                    lLogin.Text = Request.Cookies["login"].Value;
+                }
+            }
+            if (Session["login"] == null)
+            {
+                Response.Redirect("~/Cookies2.aspx");
+
+            }
+            else
+            {
+                lLogin.Text = Session["login"].ToString();
+                if (Session["contador"] == null)
+                {
+                    Session["contador"] = 0;
+                }
+
+                txtbSessionID.Text = Session.SessionID.ToString();
+                txtbContador.Text = Session["contador"].ToString();
             }
         }
 
@@ -42,6 +61,23 @@ namespace ModuloII
             }
             texto += "</p>";
             Response.Write(texto);
+        }
+
+        protected void btnContador_Click(object sender, EventArgs e)
+        {
+            Session["contador"] = (int)Session["contador"] + 1;
+        }
+
+        protected void btnRemove_Click(object sender, EventArgs e)
+        {
+            //remover um dado especifico
+            Session.Remove("contador");
+
+            //remover todos os valores da sessão
+            //Session.Clear();
+
+            //Cancela a sessão atual, finalizando a sessão
+            //Session.Abandon();
         }
     }
 }
