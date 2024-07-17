@@ -36,6 +36,15 @@ namespace ModuloII
                 txtbSessionID.Text = Session.SessionID.ToString();
                 txtbContador.Text = Session["contador"].ToString();
             }
+
+            if (Application["contador"] == null)
+            {
+                Application["contador"] = 0;
+            }
+            else
+            {
+                txtbContadorApplication.Text = Application["contador"].ToString();
+            }
         }
 
         protected void btnExecutarCookie2_Click(object sender, EventArgs e)
@@ -78,6 +87,18 @@ namespace ModuloII
 
             //Cancela a sessão atual, finalizando a sessão
             //Session.Abandon();
+        }
+
+        protected void btnContadorApplication_Click(object sender, EventArgs e)
+        {
+            Application.Lock();
+            Application["contador"] = (int)Application["contador"] + 1;
+            Application.UnLock();
+        }
+
+        protected void btnRemoveApplicationCount_Click(object sender, EventArgs e)
+        {
+            Application.Remove("contador");
         }
     }
 }
