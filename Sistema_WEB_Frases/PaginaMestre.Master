@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PaginaMestre.master.cs" Inherits="Sistema_WEB_Frases.PaginaMestre" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Frases Famosas</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="CSS/Estilos.css" />
+    <link rel="stylesheet" href="CSS/" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <asp:ImageButton ID="ImageButton1" runat="server" ImageURL="~/IMAGENS/SISTEMA/Frases-Framosas.png" PostBackUrl="~/Default.aspx" CssClass="linkhome" />
+            <nav>
+                <h1>Crie sites ASP.NET (WEBFORMS) utilizando C#</h1>
+                <asp:HyperLink ID="hlHome" runat="server" CssClass="linkBotoes" NavigateUrl="~/Default.asp" >Home</asp:HyperLink>
+                <asp:HyperLink ID="hlUsuarios" runat="server" CssClass="linkBotoes" NavigateUrl="" >Usuários</asp:HyperLink>
+                <asp:HyperLink ID="hlAutores" runat="server" CssClass="linkBotoes" NavigateUrl="" >Autores</asp:HyperLink>
+                <asp:HyperLink ID="hlFrases" runat="server" CssClass="linkBotoes" NavigateUrl="" >Frases</asp:HyperLink>
+                <asp:HyperLink ID="hlCategorias" runat="server" CssClass="linkBotoes" NavigateUrl="" >Categorias</asp:HyperLink>
+                <asp:HyperLink ID="hlSair" runat="server" CssClass="linkBotoes" NavigateUrl="" >Sair</asp:HyperLink>
+            </nav>
+        </header>
+        <main>
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </main>
+        <footer>
+            <p>Back-end Frases famosas - Site voltado para o administrador do sistema</p>
+            <p>Site desenvolvido por <a href="https://www.youtube.com/@dev_wes" target="_blank"> DEV_WES</a></p>
+        </footer>
+    </form>
+</body>
+</html>
