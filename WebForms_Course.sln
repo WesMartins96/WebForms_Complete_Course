@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sistema_Agenda", "Sistema_A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuloII", "ModuloII\ModuloII.csproj", "{ABCD8593-1207-46B3-8851-75E15FD77F1A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sistema_WEB_Frases", "Sistema_WEB_Frases\Sistema_WEB_Frases.csproj", "{C0886430-D8E3-4642-8E13-6FC5AC8D65C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{ABCD8593-1207-46B3-8851-75E15FD77F1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABCD8593-1207-46B3-8851-75E15FD77F1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ABCD8593-1207-46B3-8851-75E15FD77F1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0886430-D8E3-4642-8E13-6FC5AC8D65C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0886430-D8E3-4642-8E13-6FC5AC8D65C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0886430-D8E3-4642-8E13-6FC5AC8D65C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0886430-D8E3-4642-8E13-6FC5AC8D65C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
