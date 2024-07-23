@@ -8,7 +8,6 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <link rel="stylesheet" href="CSS/Estilos.css" />
-    <link rel="stylesheet" href="CSS/" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -16,7 +15,7 @@
             <asp:ImageButton ID="ImageButton1" runat="server" ImageURL="~/IMAGENS/SISTEMA/Frases-Framosas.png" PostBackUrl="~/Default.aspx" CssClass="linkhome" />
             <nav>
                 <h1>Crie sites ASP.NET (WEBFORMS) utilizando C#</h1>
-                <asp:HyperLink ID="hlHome" runat="server" CssClass="linkBotoes" NavigateUrl="~/Default.asp" >Home</asp:HyperLink>
+                <asp:HyperLink ID="hlHome" runat="server" CssClass="linkBotoes" NavigateUrl="~/Default.aspx" >Home</asp:HyperLink>
                 <asp:HyperLink ID="hlUsuarios" runat="server" CssClass="linkBotoes" NavigateUrl="" >Usuários</asp:HyperLink>
                 <asp:HyperLink ID="hlAutores" runat="server" CssClass="linkBotoes" NavigateUrl="" >Autores</asp:HyperLink>
                 <asp:HyperLink ID="hlFrases" runat="server" CssClass="linkBotoes" NavigateUrl="" >Frases</asp:HyperLink>

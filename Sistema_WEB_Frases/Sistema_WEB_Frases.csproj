@@ -68,10 +68,26 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CSS\Estilos.css" />
+    <Content Include="Default.aspx" />
     <Content Include="IMAGENS\SISTEMA\Frases-Framosas.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\DALAutor.cs" />
+    <Compile Include="DAL\DALCategoria.cs" />
+    <Compile Include="DAL\DALFrase.cs" />
+    <Compile Include="DAL\DALUsuario.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MODELO\Autor.cs" />
+    <Compile Include="MODELO\Categoria.cs" />
+    <Compile Include="MODELO\Frase.cs" />
+    <Compile Include="MODELO\Usuario.cs" />
     <Compile Include="PaginaMestre.Master.cs">
       <DependentUpon>PaginaMestre.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -92,9 +108,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DAL\" />
     <Folder Include="IMAGENS\AUTORES\" />
-    <Folder Include="MODELO\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -8,7 +8,7 @@ header {
     height: 10em;
     margin: auto;
     padding: 0.6em;
-    background-color: #DFDFDF;
+    background-color: #94cee1;
     box-shadow: -3px 2px 20px 0px #2E2E2E;
 }
 
@@ -42,7 +42,7 @@ header nav h1 {
 
 footer {
     width: auto;
-    height: 4em;
+    height: 5em;
     margin: 2em auto 0em;
     padding: 0.6em;
     background-color: #222222;
@@ -54,7 +54,13 @@ footer {
         line-height: 150%;
         text-align: center;
         padding: 0.2em;
-        color: #737373;
+        color: white;
+        text-decoration:none;
+    }
+
+    footer p a {
+        color: white;
+        text-decoration: none;
     }
 
 /*
@@ -72,7 +78,7 @@ footer {
     border: 1em;
     background-color: #F44336;
     color: white;
-    padding: 14px 25px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
