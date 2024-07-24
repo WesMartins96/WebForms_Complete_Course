@@ -5,9 +5,9 @@ using System.Web;
 
 namespace Sistema_WEB_Frases.MODELO
 {
-    public class Categoria
+    public class ModeloCategoria
     {
-        public int id { get; set; }
-        public string categoria { get; set; }
+        public int Id { get; set; }
+        public string Categoria { get; set; }
     }
 }

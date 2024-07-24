@@ -19,7 +19,7 @@
                 <asp:HyperLink ID="hlUsuarios" runat="server" CssClass="linkBotoes" NavigateUrl="" >Usuários</asp:HyperLink>
                 <asp:HyperLink ID="hlAutores" runat="server" CssClass="linkBotoes" NavigateUrl="" >Autores</asp:HyperLink>
                 <asp:HyperLink ID="hlFrases" runat="server" CssClass="linkBotoes" NavigateUrl="" >Frases</asp:HyperLink>
-                <asp:HyperLink ID="hlCategorias" runat="server" CssClass="linkBotoes" NavigateUrl="" >Categorias</asp:HyperLink>
+                <asp:HyperLink ID="hlCategorias" runat="server" CssClass="linkBotoes" NavigateUrl="~/Categoria.aspx" >Categorias</asp:HyperLink>
                 <asp:HyperLink ID="hlSair" runat="server" CssClass="linkBotoes" NavigateUrl="" >Sair</asp:HyperLink>
             </nav>
         </header>

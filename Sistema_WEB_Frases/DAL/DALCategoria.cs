@@ -14,9 +14,9 @@ namespace Sistema_WEB_Frases.DAL
         public DALCategoria()
         {
             System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/MyWebSiteRoot");
-            connString = rootWebConfig.ConnectionStrings.ConnectionStrings[""];
+            connString = rootWebConfig.ConnectionStrings.ConnectionStrings["sisfrasesConnectionString"];
         }
-        public void Inserir(Categoria obj)
+        public void Inserir(ModeloCategoria obj)
         {
             SqlConnection con = new SqlConnection();
             con.ConnectionString = this.connString.ToString();
@@ -25,9 +25,9 @@ namespace Sistema_WEB_Frases.DAL
             {
                 cmd.Connection = con;
                 cmd.CommandText = "Insert into categorias (categoria) values (@categoria);select @@IDENTITY;";
-                cmd.Parameters.AddWithValue("categoria", obj.categoria);
+                cmd.Parameters.AddWithValue("categoria", obj.Categoria);
                 con.Open();
-                obj.id = Convert.ToInt32(cmd.ExecuteScalar());
+                obj.Id = Convert.ToInt32(cmd.ExecuteScalar());
             }
             catch (Exception erro)
             {
@@ -39,7 +39,7 @@ namespace Sistema_WEB_Frases.DAL
             }
         }
 
-        public void Alterar(Categoria obj)
+        public void Alterar(ModeloCategoria obj)
         {
             //cria um objeto de conexão
             SqlConnection con = new SqlConnection();
@@ -49,8 +49,8 @@ namespace Sistema_WEB_Frases.DAL
             {
                 cmd.Connection = con;
                 cmd.CommandText = "update categorias set categoria=@categoria where id = @id;";
-                cmd.Parameters.AddWithValue("categoria", obj.categoria);
-                cmd.Parameters.AddWithValue("id", obj.id);
+                cmd.Parameters.AddWithValue("categoria", obj.Categoria);
+                cmd.Parameters.AddWithValue("id", obj.Id);
                 con.Open();
                 cmd.ExecuteNonQuery();
             }
@@ -118,9 +118,9 @@ namespace Sistema_WEB_Frases.DAL
             }
         }
 
-        public Categoria GetRegistro(int id)
+        public ModeloCategoria GetRegistro(int id)
         {
-            Categoria obj = new Categoria();
+            ModeloCategoria obj = new ModeloCategoria();
             SqlConnection con = new SqlConnection();
             con.ConnectionString = connString.ToString();
             SqlCommand cmd = new SqlCommand();
@@ -134,8 +134,8 @@ namespace Sistema_WEB_Frases.DAL
                 if (registro.HasRows)
                 {
                     registro.Read();
-                    obj.id = Convert.ToInt32(registro["id"]);
-                    obj.categoria = Convert.ToString(registro["categoria"]);
+                    obj.Id = Convert.ToInt32(registro["id"]);
+                    obj.Categoria = Convert.ToString(registro["categoria"]);
                 }
             }
             catch (Exception erro)
