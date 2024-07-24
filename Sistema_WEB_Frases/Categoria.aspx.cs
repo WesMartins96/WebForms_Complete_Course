@@ -13,7 +13,14 @@ namespace Sistema_WEB_Frases
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            AtualizaGrid();
+        }
 
+        private void AtualizaGrid()
+        {
+            DALCategoria dal = new DALCategoria();
+            gvDados.DataSource = dal.Localizar();
+            gvDados.DataBind();
         }
 
         private void LimparCampos()
@@ -35,7 +42,7 @@ namespace Sistema_WEB_Frases
                 if (btnSalvar.Text == "Inserir")
                 {
                     dal.Inserir(obj);
-                    msg = "<script> alert('O código gerado foi: ' "+ obj.Id.ToString() + ") </script>";
+                    msg = "<script> alert('O código gerado foi:  " + obj.Id.ToString() + "') </script>";
                 }
                 else
                 {
