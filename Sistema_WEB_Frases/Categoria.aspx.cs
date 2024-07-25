@@ -43,10 +43,11 @@ namespace Sistema_WEB_Frases
                 {
                     dal.Inserir(obj);
                     msg = "<script> alert('O código gerado foi:  " + obj.Id.ToString() + "') </script>";
+                    
                 }
                 else
                 {
-                    obj.Id = Convert.ToInt32(txtCategoria.Text);
+                    obj.Id = Convert.ToInt32(txtId.Text);
                     dal.Alterar(obj);
                     msg = "<script> alert('Registro alterado com sucesso!') </script>";
 
@@ -59,7 +60,44 @@ namespace Sistema_WEB_Frases
 
                 Response.Write("<script> alert('"+erro.Message+"') </script>");
             }
+            AtualizaGrid();
+        }
+
+        protected void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.LimparCampos();
+        }
+
+        protected void gvDados_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            int index = Convert.ToInt32(e.RowIndex);
+            int cod = Convert.ToInt32(gvDados.Rows[index].Cells[2].Text);
+            DALCategoria dal = new DALCategoria();
+            dal.Excluir(cod);
+            AtualizaGrid();
+        }
+
+        protected void gvDados_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                int index = gvDados.SelectedIndex;
+                int cod = Convert.ToInt32(gvDados.Rows[index].Cells[2].Text);
+                DALCategoria dal = new DALCategoria();
+                ModeloCategoria categoria = dal.GetRegistro(cod);
+                if (categoria.Id != 0)
+                {
+                    txtId.Text = categoria.Id.ToString();
+                    txtCategoria.Text = categoria.Categoria;
+                    btnSalvar.Text = "Alterar";
+                }
+            }
+            catch 
+            {
+                
+            }
             
+
         }
     }
 }

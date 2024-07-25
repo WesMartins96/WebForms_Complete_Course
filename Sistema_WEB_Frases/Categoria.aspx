@@ -14,14 +14,14 @@
         <br />
         <br />
         <asp:Button ID="btnSalvar" runat="server" Text="Inserir" OnClick="btnSalvar_Click" />
-        <asp:Button ID="btnCancelar" runat="server" CausesValidation="False" Text="Cancelar" />
+        <asp:Button ID="btnCancelar" runat="server" CausesValidation="False" Text="Cancelar" OnClick="btnCancelar_Click" />
         <br />
 
     </asp:Panel>
     <br />
     <br />
     <asp:Panel ID="Panel2" runat="server" GroupingText="Lista de Categorias">
-        <asp:GridView ID="gvDados" runat="server" AutoGenerateColumns="False" DataKeyNames="id" Width="575px" CellPadding="4" ForeColor="#333333" GridLines="None">
+        <asp:GridView ID="gvDados" runat="server" AutoGenerateColumns="False" DataKeyNames="id" Width="575px" CellPadding="4" ForeColor="#333333" GridLines="None" OnRowDeleting="gvDados_RowDeleting" OnSelectedIndexChanged="gvDados_SelectedIndexChanged">
             <AlternatingRowStyle BackColor="White" />
             <Columns>
                 <asp:CommandField ShowSelectButton="True" />
