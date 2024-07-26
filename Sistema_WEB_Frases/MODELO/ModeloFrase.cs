@@ -11,5 +11,13 @@ namespace Sistema_WEB_Frases.MODELO
         public string Frase { get; set; }
         public int Autor { get; set; }
         public int Categoria { get; set; }
+
+        public ModeloFrase()
+        {
+            this.Id = 0;
+            this.Frase = "";
+            this.Autor = 0;
+            this.Categoria = 0;
+        }
     }
 }

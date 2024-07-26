@@ -74,6 +74,7 @@ namespace Sistema_WEB_Frases
             int cod = Convert.ToInt32(gvDados.Rows[index].Cells[2].Text);
             DALCategoria dal = new DALCategoria();
             dal.Excluir(cod);
+            this.LimparCampos();
             AtualizaGrid();
         }
 

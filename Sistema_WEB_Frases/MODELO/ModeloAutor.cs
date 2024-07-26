@@ -10,5 +10,12 @@ namespace Sistema_WEB_Frases.MODELO
         public int Id { get; set; }
         public string Nome { get; set; }
         public string Foto { get; set; }
+
+        public ModeloAutor()
+        {
+            this.Id = 0;
+            this.Nome = "";
+            this.Foto = "";
+        }
     }
 }

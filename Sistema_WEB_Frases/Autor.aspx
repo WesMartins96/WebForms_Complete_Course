@@ -10,24 +10,24 @@
         <br />
         <asp:Label ID="Label2" runat="server" Text="Autor"></asp:Label>
         <br />
-        <asp:TextBox ID="txtCategoria" runat="server" Width="570px"></asp:TextBox>
+        <asp:TextBox ID="txtAutor" runat="server" Width="570px"></asp:TextBox>
         <br />
         <br />
         <asp:Button ID="btnSalvar" runat="server" Text="Inserir" OnClick="btnSalvar_Click"  />
-        <asp:Button ID="btnCancelar" runat="server" CausesValidation="False" Text="Cancelar"  />
+        <asp:Button ID="btnCancelar" runat="server" CausesValidation="False" Text="Cancelar" OnClick="btnCancelar_Click"  />
         <br />
 
     </asp:Panel>
     <br />
     <br />
     <asp:Panel ID="Panel2" runat="server" GroupingText="Lista de Autores">
-        <asp:GridView ID="gvDados" runat="server" AutoGenerateColumns="False" DataKeyNames="id" Width="575px" CellPadding="4" ForeColor="#333333" GridLines="None" >
+        <asp:GridView ID="gvDados" runat="server" AutoGenerateColumns="False" DataKeyNames="id" Width="575px" CellPadding="4" ForeColor="#333333" GridLines="None" OnRowDeleting="gvDados_RowDeleting" OnSelectedIndexChanged="gvDados_SelectedIndexChanged" >
             <AlternatingRowStyle BackColor="White" />
             <Columns>
                 <asp:CommandField ShowSelectButton="True" />
                 <asp:CommandField ShowDeleteButton="True" />
                 <asp:BoundField DataField="id" HeaderText="Id" InsertVisible="False" ReadOnly="True" SortExpression="id" />
-                <asp:BoundField DataField="categoria" HeaderText="Autor" SortExpression="categoria" />
+                <asp:BoundField DataField="nome" HeaderText="Autor" SortExpression="categoria" />
             </Columns>
             <EditRowStyle BackColor="#2461BF" />
             <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />

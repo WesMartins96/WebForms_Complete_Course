@@ -11,5 +11,13 @@ namespace Sistema_WEB_Frases.MODELO
         public string Nome { get; set; }
         public string Email { get; set; }
         public string Senha { get; set; }
+
+        public ModeloUsuario()
+        {
+            this.Id = 0;
+            this.Nome = "";
+            this.Email = "";
+            this.Senha = "";
+        }
     }
 }

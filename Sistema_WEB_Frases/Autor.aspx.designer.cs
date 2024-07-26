@@ -51,13 +51,13 @@ namespace Sistema_WEB_Frases
         protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
-        /// txtCategoria control.
+        /// txtAutor control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCategoria;
+        protected global::System.Web.UI.WebControls.TextBox txtAutor;
 
         /// <summary>
         /// btnSalvar control.

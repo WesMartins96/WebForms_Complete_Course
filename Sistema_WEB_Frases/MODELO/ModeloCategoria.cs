@@ -9,5 +9,11 @@ namespace Sistema_WEB_Frases.MODELO
     {
         public int Id { get; set; }
         public string Categoria { get; set; }
+
+        public ModeloCategoria()
+        {
+            this.Id = 0;
+            this.Categoria = "";
+        }
     }
 }
