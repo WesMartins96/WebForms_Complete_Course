@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Autor.aspx" />
     <Content Include="Categoria.aspx" />
     <Content Include="CSS\Estilos.css" />
     <Content Include="Default.aspx" />
@@ -74,6 +75,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Autor.aspx.cs">
+      <DependentUpon>Autor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Autor.aspx.designer.cs">
+      <DependentUpon>Autor.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Categoria.aspx.cs">
       <DependentUpon>Categoria.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

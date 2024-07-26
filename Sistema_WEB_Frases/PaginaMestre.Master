@@ -17,7 +17,7 @@
                 <h1>Crie sites ASP.NET (WEBFORMS) utilizando C#</h1>
                 <asp:HyperLink ID="hlHome" runat="server" CssClass="linkBotoes" NavigateUrl="~/Default.aspx" >Home</asp:HyperLink>
                 <asp:HyperLink ID="hlUsuarios" runat="server" CssClass="linkBotoes" NavigateUrl="" >Usuários</asp:HyperLink>
-                <asp:HyperLink ID="hlAutores" runat="server" CssClass="linkBotoes" NavigateUrl="" >Autores</asp:HyperLink>
+                <asp:HyperLink ID="hlAutores" runat="server" CssClass="linkBotoes" NavigateUrl="~/Autor.aspx" >Autores</asp:HyperLink>
                 <asp:HyperLink ID="hlFrases" runat="server" CssClass="linkBotoes" NavigateUrl="" >Frases</asp:HyperLink>
                 <asp:HyperLink ID="hlCategorias" runat="server" CssClass="linkBotoes" NavigateUrl="~/Categoria.aspx" >Categorias</asp:HyperLink>
                 <asp:HyperLink ID="hlSair" runat="server" CssClass="linkBotoes" NavigateUrl="" >Sair</asp:HyperLink>
