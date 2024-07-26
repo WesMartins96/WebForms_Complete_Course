@@ -60,6 +60,24 @@ namespace Sistema_WEB_Frases
         protected global::System.Web.UI.WebControls.TextBox txtAutor;
 
         /// <summary>
+        /// Label3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label3;
+
+        /// <summary>
+        /// flFoto control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload flFoto;
+
+        /// <summary>
         /// btnSalvar control.
         /// </summary>
         /// <remarks>

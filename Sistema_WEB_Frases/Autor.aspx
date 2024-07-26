@@ -12,6 +12,10 @@
         <br />
         <asp:TextBox ID="txtAutor" runat="server" Width="570px"></asp:TextBox>
         <br />
+        <asp:Label ID="Label3" runat="server" Text="Foto do Autor"></asp:Label>
+        <br />
+        <asp:FileUpload ID="flFoto" runat="server" />
+        <br />
         <br />
         <asp:Button ID="btnSalvar" runat="server" Text="Inserir" OnClick="btnSalvar_Click"  />
         <asp:Button ID="btnCancelar" runat="server" CausesValidation="False" Text="Cancelar" OnClick="btnCancelar_Click"  />
@@ -28,6 +32,9 @@
                 <asp:CommandField ShowDeleteButton="True" />
                 <asp:BoundField DataField="id" HeaderText="Id" InsertVisible="False" ReadOnly="True" SortExpression="id" />
                 <asp:BoundField DataField="nome" HeaderText="Autor" SortExpression="categoria" />
+                <asp:ImageField DataImageUrlField="foto" DataImageUrlFormatString="~/IMAGENS/AUTORES/{0}" HeaderText="Foto do Autor">
+                    <ControlStyle Height="90px" Width="90px" />
+                </asp:ImageField>
             </Columns>
             <EditRowStyle BackColor="#2461BF" />
             <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />

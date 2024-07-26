@@ -2,6 +2,7 @@
 using Sistema_WEB_Frases.MODELO;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -31,15 +32,23 @@ namespace Sistema_WEB_Frases
         }
 
         protected void btnSalvar_Click(object sender, EventArgs e)
-        {
-            string msg = "";
-            DALAutor dal = new DALAutor();
-            ModeloAutor obj = new ModeloAutor();
-            obj.Nome = txtAutor.Text;
-            //obj.Foto = 
-
+        { 
             try
             {
+                string msg = "";
+                DALAutor dal = new DALAutor();
+                ModeloAutor obj = new ModeloAutor();
+                string caminho = Server.MapPath(@"IMAGENS\AUTORES\");
+                obj.Nome = txtAutor.Text;
+
+                //faz o upload da foto e salva o nome do obj
+                if (flFoto.PostedFile.FileName != "")
+                {
+                    obj.Foto = DateTime.Now.Millisecond.ToString() + flFoto.PostedFile.FileName;
+                    string img = caminho + obj.Foto;
+                    flFoto.PostedFile.SaveAs(img);
+                }
+
                 if (btnSalvar.Text == "Inserir")
                 {
                     dal.Inserir(obj);
@@ -49,6 +58,13 @@ namespace Sistema_WEB_Frases
                 else
                 {
                     obj.Id = Convert.ToInt32(txtId.Text);
+                    //verifica se existe foto e deleta
+                    ModeloAutor upFoto = dal.GetRegistro(obj.Id);
+                    if (upFoto.Foto != "")
+                    {
+                        File.Delete(caminho + upFoto.Foto);
+                    }
+
                     dal.Alterar(obj);
                     msg = "<script> alert('Registro alterado com sucesso!') </script>";
 
@@ -70,7 +86,17 @@ namespace Sistema_WEB_Frases
         {
             int index = Convert.ToInt32(e.RowIndex);
             int cod = Convert.ToInt32(gvDados.Rows[index].Cells[2].Text);
+            string caminho = Server.MapPath(@"IMAGENS\AUTORES\");
+
             DALAutor dal = new DALAutor();
+
+            //verifica se existe foto e deleta
+            ModeloAutor upFoto = dal.GetRegistro(cod);
+            if (upFoto.Foto != "")
+            {
+                File.Delete(caminho + upFoto.Foto);
+            }
+
             dal.Excluir(cod);
             this.LimparCampos();
             AtualizaGrid();
