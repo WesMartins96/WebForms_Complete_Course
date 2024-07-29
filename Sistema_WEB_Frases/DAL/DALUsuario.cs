@@ -151,5 +151,35 @@ namespace Sistema_WEB_Frases.DAL
             }
             return obj;
         }
+
+        //verificar duplicidade de emails.
+        public ModeloUsuario GetRegistro(string email)
+        {
+            ModeloUsuario obj = new ModeloUsuario();
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = connString.ToString();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con;
+            try
+            {
+                cmd.CommandText = "select * from usuarios where email = @email";
+                cmd.Parameters.AddWithValue("@email", email);
+                con.Open();
+                SqlDataReader registro = cmd.ExecuteReader();
+                if (registro.HasRows)
+                {
+                    registro.Read();
+                    obj.Id = Convert.ToInt32(registro["id"]);
+                    obj.Nome = Convert.ToString(registro["nome"]);
+                    obj.Email = Convert.ToString(registro["email"]);
+                    obj.Senha = Convert.ToString(registro["senha"]);
+                }
+            }
+            catch (Exception erro)
+            {
+                throw new Exception(erro.Message);
+            }
+            return obj;
+        }
     }
 }

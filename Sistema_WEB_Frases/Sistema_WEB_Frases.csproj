@@ -72,6 +72,7 @@
     <Content Include="CSS\Estilos.css" />
     <Content Include="Default.aspx" />
     <Content Include="IMAGENS\SISTEMA\Frases-Framosas.png" />
+    <Content Include="Usuario.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -112,6 +113,13 @@
       <DependentUpon>PaginaMestre.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Usuario.aspx.cs">
+      <DependentUpon>Usuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usuario.aspx.designer.cs">
+      <DependentUpon>Usuario.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
