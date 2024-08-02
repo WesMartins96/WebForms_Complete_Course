@@ -11,7 +11,12 @@ namespace Sistema_WEB_Frases
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["email"] != null)
+            {
+                lbEmail.Text = Session["email"].ToString();
+                lbNome.Text = Session["nome"].ToString();
+                //iUser.ImageUrl = Session["foto"].ToString();
+            }
         }
     }
 }

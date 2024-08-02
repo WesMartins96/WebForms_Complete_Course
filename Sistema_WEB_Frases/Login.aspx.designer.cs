@@ -11,8 +11,26 @@ namespace Sistema_WEB_Frases
 {
 
 
-    public partial class Default
+    public partial class Login
     {
+
+        /// <summary>
+        /// form1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+
+        /// <summary>
+        /// Panel1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel Panel1;
 
         /// <summary>
         /// Label1 control.
@@ -24,13 +42,13 @@ namespace Sistema_WEB_Frases
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// lbNome control.
+        /// txtbLogin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbNome;
+        protected global::System.Web.UI.WebControls.TextBox txtbLogin;
 
         /// <summary>
         /// Label2 control.
@@ -42,21 +60,21 @@ namespace Sistema_WEB_Frases
         protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
-        /// lbEmail control.
+        /// txtbSenha control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbEmail;
+        protected global::System.Web.UI.WebControls.TextBox txtbSenha;
 
         /// <summary>
-        /// iUser control.
+        /// btnLogar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image iUser;
+        protected global::System.Web.UI.WebControls.Button btnLogar;
     }
 }
