@@ -70,6 +70,7 @@
     <Content Include="Autor.aspx" />
     <Content Include="Categoria.aspx" />
     <Content Include="CSS\Estilos.css" />
+    <Content Include="CSS\login.css" />
     <Content Include="Default.aspx" />
     <Content Include="Frases.aspx" />
     <Content Include="IMAGENS\SISTEMA\Frases-Framosas.png" />
