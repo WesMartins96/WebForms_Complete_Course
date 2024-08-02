@@ -15,7 +15,7 @@ namespace Sistema_WEB_Frases
         {
             if (Session["email"] == null)
             {
-                //Response.Redirect("~/Login.aspx");
+                Response.Redirect("~/Login.aspx");
             }
         }
     }
