@@ -71,6 +71,7 @@
     <Content Include="Categoria.aspx" />
     <Content Include="CSS\Estilos.css" />
     <Content Include="Default.aspx" />
+    <Content Include="Frases.aspx" />
     <Content Include="IMAGENS\SISTEMA\Frases-Framosas.png" />
     <Content Include="Login.aspx" />
     <Content Include="Usuario.aspx" />
@@ -101,6 +102,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frases.aspx.cs">
+      <DependentUpon>Frases.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frases.aspx.designer.cs">
+      <DependentUpon>Frases.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>

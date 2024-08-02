@@ -94,7 +94,12 @@ namespace Sistema_WEB_Frases.DAL
         public DataTable Localizar()
         {
             DataTable tabela = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("Select * from frases", connString.ConnectionString);
+            string sql = @"SELECT f.id, f.frase, f.autor, f.categoria, a.nome as autornome, c.categoria as categorianome
+                            FROM frases f 
+                            INNER JOIN autores a ON f.autor = a.id
+                            INNER JOIN categorias c ON f.categoria = c.id";
+
+            SqlDataAdapter da = new SqlDataAdapter(sql, connString.ConnectionString);
             try
             {
                 da.Fill(tabela);

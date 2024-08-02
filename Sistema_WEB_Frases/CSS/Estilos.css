@@ -8,12 +8,13 @@ header {
     height: 10em;
     margin: auto;
     padding: 0.6em;
-    background-color: #94cee1;
+    background-color: #6667ab;
     box-shadow: -3px 2px 20px 0px #2E2E2E;
 }
 
 nav {
-    width: 40%;
+    font-family: 'Fira Code';
+    width: 50%;
     margin-top: 3.5em;
     margin-right: 1em;
     float: right;
@@ -34,18 +35,24 @@ article {
     padding: 0.6em
 }
 
+header h1 {
+    width: auto;
+    color: white;
+    font-family: 'Fira Code';
+    margin-left: 10px;
+}
+
 header nav h1 {
-    font-family: Arial;
+    font-family: 'Fira Code';
     font-size: 1em;
-    color: #FFFFFF;
+    color: white;
 }
 
 footer {
-    width: auto;
-    height: 5em;
+    width: 80%;
     margin: 2em auto 0em;
     padding: 0.6em;
-    background-color: #222222;
+    background-color: #6667ab;
 }
 
     footer p {
@@ -55,11 +62,11 @@ footer {
         text-align: center;
         padding: 0.2em;
         color: white;
-        text-decoration:none;
+        text-decoration: none;
     }
 
     footer p a {
-        color: white;
+        color: #343585;
         text-decoration: none;
     }
 
@@ -68,17 +75,18 @@ footer {
 */
 .linkhome {
     width: 40%;
-    height: 160px;
-    margin-left: 2em;
+    color: white;
+    font-family:'Agency FB';
+    margin-left: 20px;
 }
 /*
     Define a configuração dos botões (links) do menu
 */
 .linkBotoes {
     border: 1em;
-    background-color: #F44336;
+    background-color: #6667ab;
     color: white;
-    padding: 10px 20px;
+    padding: 0 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
